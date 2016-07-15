@@ -1,0 +1,17 @@
+{
+    "name" : "Easy Export",
+    "identifier" : "com.sketchapp.examples.helloworld",
+    "version" : "1.0.0",
+    "description" : "Lets the user export to all IOS screen sizes all at once.",
+    "authorEmail" : "Joemanto123@gmail.com",
+    "author" : "Joe Manto",
+    "commands" : [
+    {
+      "script" : "script.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Easy Export",
+      "identifier" : "easyexport"
+    }
+  ]
+}
