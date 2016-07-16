@@ -1,6 +1,4 @@
 <img height = "300" src = "https://github.com/JoeManto/Sheetie/blob/master/logo.jpg"/>
-<br>
-<img height = "300" src = "https://github.com/JoeManto/Sheetie/blob/master/logo_2.jpg"/>
 <h2>Sheetie 1.OV</h2>
 <h3>Sketch 3 Plugin that makes a SpriteSheets to export or use.</h3>
 
