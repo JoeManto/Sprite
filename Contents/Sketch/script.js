@@ -56,7 +56,7 @@ function onRun(context) {
       var alert = COSAlertWindow.new();
       alert.setMessageText('Sheetie');
       alert.setInformativeText('Set the size of sheet');
-      var Options = ['128x128', '256x256'];
+      var Options = ['128x128','256x256','512x512','1024x1024'];
       var Selection = createSelectionBox(Options, 0);
       alert.addAccessoryView(Selection);
       alert.addButtonWithTitle('Make');
@@ -67,7 +67,7 @@ function onRun(context) {
   function handleAlertResponse(alert, code) {
     if (code == "1000") {
         return {
-	        	size : alert.viewAtIndex(0).stringValue()
+	        size : alert.viewAtIndex(0).stringValue()
         };
      }
      return null;
@@ -85,11 +85,14 @@ function onRun(context) {
       makeArtboard(0,0,128,128);
     }else if (options.size == '256x256') {
       makeArtboard(0,0,256,256);
+    }else if (options.size == '512x512') {
+      makeArtboard(0,0,512,512);
+    }else if (options.size == '1024x1024') {
+      makeArtboard(0,0,1024,1024);
     }
   }
 
   MakeArtboardForSize();
   doc.currentPage().addLayers([artboard])
   makeGrid();
-
 };
