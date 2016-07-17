@@ -3,9 +3,12 @@
 <h3>Sketch 3 Plugin that makes a SpriteSheets to export or use.</h3>
 
 # Install from repo
-- Download and open Sheetie-master.zip.
+- Download and open Sheetie-master folder.
 - Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...
 - Place Sheetie.sketchplugin into the revealed plugins directory.
+<h5>----OR----</h5>
+- Download and open Sheetie-master folder.
+- Double click Sheetie.sketchplugin (while sketch is open)
 
 # Notice
 - This plugin works with the latest version of Sketch 3.
