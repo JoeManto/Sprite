@@ -1,21 +1,15 @@
 
-
 function onRun(context) {
-
   var doc = context.document;
   var artboard = MSArtboardGroup.new()
   var artboardFrame = artboard.frame()
-
   var width;
   var height;
   var size = 8;
-
   var alert = makeAlert();
   var options  = handleAlertResponse(alert, alert.runModal());
 
-
   function makeArtboard(x,y,w,h){
-
       width = w;
       height = h;
       artboardFrame.setX(x)
@@ -40,7 +34,6 @@ function onRun(context) {
           fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
           artboard.addLayers([shapeGroup]);
      }
-
      for(var i = 1;i*size <= height;i++){
           rect = MSRectangleShape.alloc().init();
           rect.frame = MSRect.rectWithRect(NSMakeRect(0, i*size, width, 1));
@@ -50,45 +43,35 @@ function onRun(context) {
           fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
           artboard.addLayers([shapeGroup]);
      }
-  }
+  };
 
-function makeAlert(){
-    var alert = COSAlertWindow.new();
-    alert.setMessageText('Sheetie');
-    alert.setInformativeText('Set the size of sheet');
+  function makeAlert(){
+      var alert = COSAlertWindow.new();
+      alert.setMessageText('Sheetie');
+      alert.setInformativeText('Set the size of sheet');
+      var Options = ['128x128', '256x256'];
+      var Selection = createSelectionBox(Options, 0);
+      alert.addAccessoryView(Selection);
+      alert.addButtonWithTitle('Make');
+      alert.addButtonWithTitle('Cancel');
+      return alert;
+  };
 
-    var Options = ['128x128', '256x256'];
-    var Selection = createSelectionBox(Options, 0);
-
-    alert.addAccessoryView(Selection);
-
-    alert.addButtonWithTitle('Make');
-    alert.addButtonWithTitle('Cancel');
-
-    return alert;
-};
-
-function handleAlertResponse(alert, code) {
-if (code == "1000") {
+  function handleAlertResponse(alert, code) {
+    if (code == "1000") {
         return {
 	        	size : alert.viewAtIndex(0).stringValue()
         };
      }
+     return null;
+   };
 
-    	return null;
-};
-
-
-function createSelectionBox(options, selectedItemIndex) {
-
-		var selectBox = NSComboBox.alloc().initWithFrame(NSMakeRect(0,0,200,25));
-		selectBox.addItemsWithObjectValues(options);
-		selectBox.selectItemAtIndex(selectedItemIndex);
-
-		return selectBox;
-	}
-
-
+  function createSelectionBox(options, selectedItemIndex) {
+     var selectBox = NSComboBox.alloc().initWithFrame(NSMakeRect(0,0,200,25));
+     selectBox.addItemsWithObjectValues(options);
+     selectBox.selectItemAtIndex(selectedItemIndex);
+     return selectBox;
+	 };
 
   function MakeArtboardForSize(){
     if(options.size == '128x128'){
@@ -96,16 +79,10 @@ function createSelectionBox(options, selectedItemIndex) {
     }else if (options.size == '256x256') {
       makeArtboard(0,0,256,256);
     }
-
-
-    
-
-
   }
 
   MakeArtboardForSize();
   doc.currentPage().addLayers([artboard])
   makeGrid();
-
 
 };
