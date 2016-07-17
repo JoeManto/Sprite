@@ -18,12 +18,14 @@ function onRun(context) {
       artboardFrame.setHeight(h)
       artboard.hasBackgroundColor = true;
       artboard.backgroundColor = MSColor.colorWithRed_green_blue_alpha(211/255,122/255,255/255,1);
+      [artboard setName:@"Sprite Sheet"];
   };
 
   function makeGrid(){
      var rect;
      var shapeGroup;
      var fill;
+     var group = [[NSMutableArray alloc] init];
 
      for(var i = 1;i*size <= width;i++){
           rect = MSRectangleShape.alloc().init();
@@ -32,7 +34,7 @@ function onRun(context) {
           shapeGroup.style().addStylePartOfType(0)
           fill = shapeGroup.style().fills().firstObject();
           fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
-          artboard.addLayers([shapeGroup]);
+          [group addObject:shapeGroup];
      }
      for(var i = 1;i*size <= height;i++){
           rect = MSRectangleShape.alloc().init();
@@ -41,8 +43,13 @@ function onRun(context) {
           shapeGroup.style().addStylePartOfType(0);
           fill = shapeGroup.style().fills().firstObject();
           fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
-          artboard.addLayers([shapeGroup]);
+          [group addObject:shapeGroup];
      }
+    var layer = MSLayerGroup.alloc().init();
+    [layer addLayers:group];
+    [layer setIsLocked:true];
+    [layer setName:@"Contents"]
+    artboard.addLayers([layer]);
   };
 
   function makeAlert(){

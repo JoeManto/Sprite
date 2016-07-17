@@ -11,8 +11,8 @@
 - This plugin works with the latest version of Sketch 3
 
 # To-Do
-- Change the artboard's color from white to purple upon start.
+- Change the artboard's color from white to purple upon start.(done 7/16/2016)
 - Group all layers upon start.
 - Lock all layers upon start.
-- Increase the size of the artboards
-- prompt the user so they can make different sized artboards  
+- Increase the size of the artboards.(done 7/16/2016)
+- prompt the user so they can make different sized artboards.(done 7/16/2016)
