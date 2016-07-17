@@ -1,0 +1,17 @@
+{
+    "name" : "Sheetie",
+    "identifier" : "com.joemanto.sheetie",
+    "version" : "1.0.0",
+    "description" : "Makes SpriteSheets to export or use",
+    "authorEmail" : "Joemanto123@gmail.com",
+    "author" : "Joe Manto",
+    "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Make Sheet",
+      "identifier" : "sheet"
+    }
+  ]
+}
