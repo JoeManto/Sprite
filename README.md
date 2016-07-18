@@ -22,6 +22,7 @@
 - prompt the user so they can make different sized artboards.(done 7/16/2016)
 - able to change between SpriteSheet square sizes default is 8px atm.
 - In options prompt let the user change the background and grid colors.
+- add keyboard shortcut.
 
 #Feedback
 - Just start a new issue or make a branch.
