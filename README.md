@@ -9,16 +9,19 @@
 <h5>----OR----</h5>
 - Download and open Sheetie-master folder.
 - Double click Sheetie.sketchplugin (while sketch is open)
-<br>
+
+
 # How to Use
 Once the plugin is installed navigate to the plugins menu item and find `Sheetie` > `make sheet`.
 <h5>----OR----</h5>
 Once the plugin is installed use the command `command`+`shift`+`b`.
-<br>
+
+
 # Notice
 - This plugin works with the latest version of Sketch 3.
 - This plugin is useful for game developers.
-<br>
+
+
 # To-Do
 - Change the artboard's color from white to purple upon start.(done 7/16/2016)
 - Group all layers upon start.(done 7/17/2016)
