@@ -20,7 +20,7 @@
 - Lock all layers upon start.(done 7/17/2016)
 - Increase the size of the artboards.(done 7/16/2016)
 - prompt the user so they can make different sized artboards.(done 7/16/2016)
-- able to change between SpriteSheet square sizes default is 8px atm.
+- able to change between SpriteSheet square sizes default is 8px atm.(done 7/23/2016)
 - In options prompt let the user change the background and grid colors.
 - add keyboard shortcut.
 
