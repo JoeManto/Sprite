@@ -9,7 +9,12 @@
 <h5>----OR----</h5>
 - Download and open Sheetie-master folder.
 - Double click Sheetie.sketchplugin (while sketch is open)
-
+<br>
+# How to Use
+Once the plugin is installed navigate to the plugins menu item and find `Sheetie` > `make sheet`.
+<h5>----OR----</h5>
+Once the plugin is installed use the command `command`+`shift`+`b`.
+<br>
 # Notice
 - This plugin works with the latest version of Sketch 3.
 - This plugin is useful for game developers.
@@ -22,7 +27,7 @@
 - prompt the user so they can make different sized artboards.(done 7/16/2016)
 - able to change between SpriteSheet square sizes default is 8px atm.(done 7/23/2016)
 - In options prompt let the user change the background and grid colors.
-- add keyboard shortcut.
+- add keyboard shortcut.(done 7/23/2016)
 
-#Feedback
+# Feedback
 - Just start a new issue or make a branch.

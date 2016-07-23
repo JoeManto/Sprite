@@ -9,7 +9,7 @@
     {
       "script" : "script.cocoascript",
       "handler" : "onRun",
-      "shortcut" : "",
+      "shortcut" : "command shift b",
       "name" : "Make Sheet",
       "identifier" : "sheet"
     }
