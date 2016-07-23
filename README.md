@@ -18,7 +18,7 @@ Once the plugin is installed use the command `command`+`shift`+`b`.
 # Notice
 - This plugin works with the latest version of Sketch 3.
 - This plugin is useful for game developers.
-
+<br>
 # To-Do
 - Change the artboard's color from white to purple upon start.(done 7/16/2016)
 - Group all layers upon start.(done 7/17/2016)
