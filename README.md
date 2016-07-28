@@ -2,6 +2,11 @@
 <h2>Sheetie 1.OV</h2>
 <h3>Sketch 3 Plugin that makes SpriteSheets to export or use.</h3>
 
+
+# viewed on
+`http://sketchapp.com/extensions/plugins/`sketchapp official plugin website.(spelling error :D)
+`http://sketch.land/grids/` Sketch.land (spelling error :D)
+
 # Install from repo
 - Download and open Sheetie-master folder.
 - Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...
