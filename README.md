@@ -4,9 +4,8 @@
 
 
 # viewed on
-`http://sketchapp.com/extensions/plugins/`-sketchapp official plugin website.(spelling error :D)
-`http://sketch.land/grids/`-Sketch.land (spelling error :D)
-
+`http://sketchapp.com/extensions/plugins/`-sketchapp official plugin website.
+`http://sketch.land/grids/`-Sketch.land
 `http://www.sketchappsources.com/plugins-for-sketch.html`-sketchappsources
 
 # Install from repo
