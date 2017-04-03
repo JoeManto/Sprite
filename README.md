@@ -5,7 +5,9 @@
 
 # viewed on
 `http://sketchapp.com/extensions/plugins/`-sketchapp official plugin website.
+
 `http://sketch.land/grids/`-Sketch.land
+
 `http://www.sketchappsources.com/plugins-for-sketch.html`-sketchappsources
 
 # Install from repo
@@ -13,18 +15,20 @@
 - Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...
 - Place Sheetie.sketchplugin into the revealed plugins directory.
 <h5>----OR----</h5>
+
 - Download and open Sheetie-master folder.
-- Double click Sheetie.sketchplugin (while sketch is open)
+- Double click Sheetie.sketchplugin.
 
 
 # How to Use
-Once the plugin is installed navigate to the plugins menu item and find `Sheetie` > `make sheet`.
+- Once the plugin is installed navigate to the plugins menu item and find `Sheetie` > `make sheet`.
 <h5>----OR----</h5>
-Once the plugin is installed use the command `command`+`shift`+`b`.
+
+- Once the plugin is installed use the command `command`+`shift`+`b`.
 
 
 # Notice
-- This plugin works with the latest version of Sketch 3.
+- This plugin works with the latest version of Sketch 3 (if it does'nt start an issue).
 - This plugin is useful for game developers.
 
 
